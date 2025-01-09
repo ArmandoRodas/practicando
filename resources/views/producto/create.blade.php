@@ -42,7 +42,7 @@
             </div>
             <div class="mt-3">
                 <button type="submit" class="btn btn-sm btn-success">Crear producto</button>
-                <a href="{{ route('productos.index') }}" class="btn btn-sm btn-primary"> Regresar </a>
+                <a href="{{ route('producto.index') }}" class="btn btn-sm btn-primary"> Regresar </a>
             </div>
             
         </form>

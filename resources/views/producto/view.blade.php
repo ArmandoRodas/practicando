@@ -12,7 +12,7 @@
         <p><strong>Código:</strong> {{ $producto->codigoProducto }}</p>
         <p><strong>Descripción:</strong> {{ $producto->descripcionProducto }}</p>
         <p><strong>Precio:</strong> Q. {{ $producto->precioProducto }}</p>
-        <a href="{{ route('productos.index') }}" class="btn btn-primary">Volver</a>
+        <a href="{{ route('producto.index') }}" class="btn btn-primary">Volver</a>
     </div>
   </body>
 </html>

@@ -63,7 +63,7 @@ class ProductoController extends Controller
 
             DB::commit();
             session()->flash('success', 'Producto creado correctamente.');
-            return to_route('productos.index');
+            return to_route('producto.index');
         } catch (\Throwable $th) {
            DB::rollBack();
            return back()->with('error', 'Error al crear el producto: ' . $th->getMessage());
@@ -96,7 +96,7 @@ class ProductoController extends Controller
 
             DB::commit();
             session()->flash('success', 'Producto actualizado correctamente.');
-            return to_route('productos.index');
+            return to_route('producto.index');
         } catch (\Throwable $th) {
            DB::rollBack();
            return back()->with('error', 'Error al actualizar el producto: ' . $th->getMessage());
